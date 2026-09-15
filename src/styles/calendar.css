@@ -1,0 +1,79 @@
+.date-section {
+  background: #1e2e4f;
+  color: #f1f4fa;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  padding: 83px 105px;
+}
+
+.date-section .eyebrow {
+  color: #aec4e5;
+}
+
+.date-copy p {
+  color: #c8d2e5;
+  margin: 25px 0;
+}
+
+.date-number {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 37px;
+  letter-spacing: 0.06em;
+}
+
+.calendar {
+  align-self: center;
+}
+
+.calendar-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 33px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #d9e1f144;
+}
+
+.calendar-title span {
+  color: #adc1e0;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px 4px;
+  padding-top: 20px;
+}
+
+.calendar-grid > span {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  position: relative;
+  font-size: 18px;
+}
+
+.calendar-grid .weekday {
+  font-family: Manrope, sans-serif;
+  font-size: 10px;
+  color: #adc1e0;
+}
+
+.wedding-day svg {
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  fill: none;
+  stroke: #a8c5ed;
+  stroke-width: 1.6;
+}
+
+.calendar-note {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #c8d2e5;
+  text-align: center;
+  margin-top: 24px;
+}

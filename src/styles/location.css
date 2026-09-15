@@ -1,0 +1,56 @@
+.location {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 90px;
+  padding: 110px 105px;
+}
+
+.location-art {
+  background: #e9edf5;
+  padding: 35px 38px 25px;
+  text-align: center;
+}
+
+.arch {
+  border: 1px solid #9aacca;
+  border-radius: 180px 180px 0 0;
+  padding: 12px 25px 0;
+  color: #526b94;
+}
+
+.arch svg {
+  width: 100%;
+}
+
+.location-art > span {
+  display: block;
+  font-size: 15px;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  margin-top: 19px;
+}
+
+.location-copy h2 {
+  font-size: 58px;
+}
+
+.location-copy p {
+  font-size: 14px;
+  color: #667086;
+  margin-top: 16px;
+}
+
+.location-copy .address {
+  font-size: 21px;
+  color: #192338;
+  margin-top: 30px;
+}
+
+.small-rule {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #8fb3e2;
+  margin-top: 30px;
+}

@@ -1,0 +1,135 @@
+/* Timing and easing can be adjusted here without editing components. */
+:root {
+  --motion-duration: 800ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes arrive {
+  from {
+    opacity: 0;
+    translate: 0 20px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes draw-heart {
+  from {
+    stroke-dashoffset: 220;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero .eyebrow,
+  .hero h1,
+  .hero .polaroid,
+  .hero .handwritten,
+  .hero-bottom {
+    animation: arrive var(--motion-duration) var(--motion-ease) both;
+  }
+
+  .hero h1 {
+    animation-delay: 100ms;
+  }
+  .hero .polaroid.left {
+    animation-delay: 180ms;
+  }
+  .hero .polaroid.right {
+    animation-delay: 320ms;
+  }
+  .hero .handwritten {
+    animation-delay: 440ms;
+  }
+  .hero-bottom {
+    animation-delay: 500ms;
+  }
+
+  .section {
+    transition:
+      opacity var(--motion-duration) var(--motion-ease),
+      translate var(--motion-duration) var(--motion-ease);
+  }
+
+  .section.reveal-pending {
+    opacity: 0;
+    translate: 0 28px;
+  }
+
+  /* Keyboard navigation must never land on invisible content. */
+  .section:focus-within {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  .revealed .wedding-day path {
+    stroke-dasharray: 220;
+    animation: draw-heart 1200ms var(--motion-ease) 200ms both;
+  }
+
+  .polaroid,
+  .together,
+  .swatches > div > span,
+  .rsvp button,
+  .rsvp button > span,
+  .drink-options label,
+  .hero-bottom a {
+    transition:
+      transform 350ms var(--motion-ease),
+      background-color 250ms ease,
+      box-shadow 350ms ease;
+  }
+
+  .other-label {
+    display: block;
+    animation: arrive 300ms var(--motion-ease);
+  }
+
+  @media (hover: hover) {
+    .polaroid.left:hover {
+      transform: rotate(-5deg) translateY(-7px);
+    }
+    .polaroid.right:hover {
+      transform: rotate(5deg) translateY(-7px);
+    }
+    .together:hover {
+      transform: rotate(0deg) translateY(-5px);
+    }
+    .swatches > div:hover > span {
+      transform: translateY(-6px) scale(1.06);
+    }
+    .rsvp button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px #19233820;
+    }
+    .rsvp button:hover > span {
+      transform: translate(3px, -3px);
+    }
+    .drink-options label:hover {
+      transform: translateY(-2px);
+    }
+    .hero-bottom a:hover {
+      transform: translateY(4px);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .section.reveal-pending {
+    opacity: 1;
+    translate: none;
+  }
+}

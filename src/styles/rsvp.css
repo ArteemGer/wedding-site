@@ -1,0 +1,141 @@
+.rsvp {
+  background: #e8edf6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 85px 105px;
+}
+
+.rsvp-copy p {
+  margin-top: 30px;
+  color: #556078;
+}
+
+.rsvp-star {
+  font-size: 85px;
+  line-height: 1;
+  display: block;
+  color: #829bc1;
+  margin-top: 44px;
+}
+
+.field-label,
+legend {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+input:not([type='checkbox']) {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #99aac3;
+  border-radius: 0;
+  padding: 13px 0;
+  margin: 6px 0 30px;
+  color: #192338;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #68778f;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.form-hint {
+  font-size: 12px;
+  color: #667086;
+  margin-top: 5px;
+}
+
+.drink-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin: 20px 0 25px;
+}
+
+.drink-options label {
+  position: relative;
+  border: 1px solid #bdc9dc;
+  padding: 11px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.drink-options input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.drink-options label:has(input:focus-visible) {
+  outline: 2px solid #31487a;
+  outline-offset: 3px;
+}
+
+.drink-options .selected {
+  background: #d5dfef;
+  border-color: #607a9f;
+}
+
+.check {
+  margin-left: auto;
+  color: #506a90;
+}
+
+.other-label {
+  font-size: 14px;
+}
+
+.rsvp button {
+  width: 100%;
+  background: #1e2e4f;
+  color: white;
+  padding: 17px 22px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.rsvp button:hover {
+  background: #31487a;
+}
+
+.rsvp button > span {
+  float: right;
+}
+
+.storage-note {
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.form-status {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.rsvp button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+  box-shadow: none;
+}
+
+.rsvp input:disabled,
+.rsvp fieldset:disabled label {
+  cursor: wait;
+  opacity: 0.7;
+}

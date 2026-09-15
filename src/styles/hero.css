@@ -1,0 +1,166 @@
+.topbar {
+  max-width: 1240px;
+  margin: auto;
+  height: 90px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.wordmark {
+  letter-spacing: 0.22em;
+  font-weight: 600;
+}
+
+.topbar a:last-child {
+  letter-spacing: 0;
+  font-size: 14px;
+}
+
+.topbar a span {
+  margin-left: 18px;
+}
+
+.hero {
+  max-width: 1240px;
+  margin: auto;
+  padding: 54px 70px 0;
+  background: radial-gradient(ellipse at 50% 60%, #e1e8f4 0, transparent 65%);
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.23em;
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 6.1vw, 83px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.hero h1 i {
+  font-size: 0.7em;
+  color: #7189af;
+  font-weight: 400;
+}
+
+.childhood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 62px 0 50px;
+  gap: 150px;
+}
+
+.polaroid {
+  background: #fff;
+  padding: 13px 13px 20px;
+  width: 255px;
+  box-shadow: 0 12px 35px #19233813;
+}
+
+.polaroid.left {
+  transform: rotate(-8deg);
+}
+
+.polaroid.right {
+  transform: rotate(8deg);
+}
+
+.photo {
+  background: #d9e1ee;
+  overflow: hidden;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.polaroid .photo {
+  height: 255px;
+}
+
+.photo-placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #536586;
+  gap: 15px;
+  background: linear-gradient(140deg, #e2e7ed, #c4cfdf);
+}
+
+.photo-placeholder svg {
+  width: 115px;
+  opacity: 0.65;
+}
+
+.photo-placeholder span {
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+.polaroid figcaption {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 23px;
+  font-style: italic;
+  padding-top: 13px;
+}
+
+.handwritten {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 29px;
+  line-height: 1.1;
+  color: #31487a;
+}
+
+.childhood > .handwritten {
+  position: absolute;
+  left: calc(50% - 71px);
+  top: 145px;
+  transform: rotate(-8deg);
+}
+
+.handwritten svg {
+  width: 85px;
+  margin: 20px 0 0 20px;
+  fill: none;
+  stroke: #31487a;
+  stroke-width: 1;
+}
+
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #19233822;
+  padding: 22px 0;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+}
+
+.hero-bottom a {
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.section {
+  padding: 105px 65px;
+  max-width: 1240px;
+  margin: auto;
+}

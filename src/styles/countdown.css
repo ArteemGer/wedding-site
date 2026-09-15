@@ -1,0 +1,45 @@
+.countdown {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.countdown h2 {
+  font-size: 52px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 55px;
+}
+
+.timer > div {
+  min-width: 90px;
+  position: relative;
+}
+
+.timer > div:not(:last-child):after {
+  content: ':';
+  position: absolute;
+  right: -32px;
+  top: 0;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 60px;
+  color: #9aaecb;
+}
+
+.timer span {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 80px;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.timer small {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #63738c;
+}

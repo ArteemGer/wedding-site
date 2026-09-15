@@ -1,0 +1,36 @@
+footer.section {
+  background: #192338;
+  color: #d9e1f1;
+  text-align: center;
+  padding: 64px 30px 30px;
+}
+
+.footer-heart {
+  font-family: Georgia, serif;
+  font-size: 50px;
+  color: #8fb3e2;
+}
+
+footer h2 {
+  font-size: 90px;
+  margin: 12px 0 25px;
+}
+
+footer p {
+  color: #c4cede;
+  font-size: 15px;
+}
+
+.footer-sign {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 25px;
+  font-style: italic;
+  margin: 35px 0 55px;
+}
+
+.footer-date {
+  border-top: 1px solid #d9e1f12b;
+  padding-top: 22px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
