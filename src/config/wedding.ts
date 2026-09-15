@@ -6,10 +6,11 @@ export const wedding = {
   date: '2026-12-13T00:00:00+03:00',
   timeZone: 'Europe/Moscow',
   city: 'Москва',
-  address: 'Москва, ...',
-  groomPhoto: '',
-  bridePhoto: '',
-  couplePhoto: '',
+  address: 'Москва, М. Савёловская, Бутырская улица, дом 46, строение 3',
+  groomPhoto: '/mini-ivan.jpg',
+  bridePhoto: '/mini-angelina-2.jpg',
+  couplePhoto: '/ivan-angelina.jpg',
+  placePhoto: '/place.jpg',
 }
 
 export const drinks = [
