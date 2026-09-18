@@ -139,3 +139,9 @@ fieldset {
   cursor: wait;
   opacity: 0.7;
 }
+
+.subButton{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -13,6 +13,7 @@
     "test:rsvp": "node --test tests/rsvp.test.mjs"
   },
   "dependencies": {
+    "lucide-react": "^1.47.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },

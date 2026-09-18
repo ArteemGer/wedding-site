@@ -1,3 +1,4 @@
+import { MoveUpRight } from 'lucide-react'
 import { drinks } from '../config/wedding'
 import { useRsvp } from '../hooks/useRsvp'
 export function Rsvp() {
@@ -91,13 +92,13 @@ export function Rsvp() {
             />
           </label>
         )}
-        <button type="submit" disabled={isSubmitting}>
+        <button className="subButton" type="submit" disabled={isSubmitting}>
           {isSubmitting
             ? 'Отправляем…'
             : isConnected
               ? 'Отправить ответ'
               : 'Сохранить ответ'}{' '}
-          <span aria-hidden="true">↗</span>
+          <span aria-hidden="true"><MoveUpRight size={12} /></span>
         </button>
         <p className="form-hint storage-note">
           {isConnected
