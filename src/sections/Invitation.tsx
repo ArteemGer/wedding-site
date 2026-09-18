@@ -12,7 +12,7 @@ export function Invitation() {
       <figure className="together">
         <Photo
           src={wedding.couplePhoto}
-          label="Здесь будет наша общая фотография"
+          label="Иван и Ангелина в зимнем лесу"
         />
         <figcaption className="handwritten">
           {invitation.photoCaption}

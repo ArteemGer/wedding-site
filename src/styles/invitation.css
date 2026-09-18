@@ -25,7 +25,8 @@
 }
 
 .together .photo {
-  height: 270px;
+  height: auto;
+  aspect-ratio: 3 / 2;
 }
 
 .together figcaption {

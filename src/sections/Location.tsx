@@ -23,10 +23,8 @@ export function Location() {
           <em>наши люди</em>
         </h2>
         <p className="address">{wedding.address}</p>
-        <p>
-          Точное место встречи и подробности
-          <br />
-          мы сообщим дополнительно.
+        <p className="location-time">
+          Сбор гостей состоиться в <time dateTime={wedding.time}>{wedding.time}</time>
         </p>
         <span className="small-rule" />
       </div>

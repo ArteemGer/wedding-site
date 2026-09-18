@@ -58,3 +58,14 @@
   background: #8fb3e2;
   margin-top: 30px;
 }
+
+.location-copy .location-time {
+  font-size: 18px;
+  color: #31487a;
+}
+
+.location-time time {
+  font-weight: 600;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}

@@ -5,6 +5,7 @@ import { Invitation } from './sections/Invitation'
 import { WeddingDate } from './sections/WeddingDate'
 import { Location } from './sections/Location'
 import { DressCode } from './sections/DressCode'
+import { GiftWish } from './sections/GiftWish'
 import { Rsvp } from './sections/Rsvp'
 import { Countdown } from './sections/Countdown'
 import { Farewell } from './sections/Farewell'
@@ -20,6 +21,7 @@ export default function App() {
         <WeddingDate />
         <Location />
         <DressCode />
+        <GiftWish />
         <Rsvp />
         <Countdown />
         <Farewell />
